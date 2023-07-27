@@ -1,0 +1,124 @@
+.booking__section {
+}
+._section {
+}
+.booking__container {
+  display: flex;
+  flex-direction: column;
+}
+._centre-title {
+  align-self: center;
+  margin-bottom: 40px;
+  display: flex;
+  font-size: 42px;
+  line-height: 49/42 * 100%;
+}
+
+.booling__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.booking__decorative-container {
+  display: flex;
+  flex-direction: column;
+}
+.massage {
+  resize: none;
+  height: 76px;
+  color: $color_white;
+}
+.booking__btn {
+  margin-top: 44px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16/12 * 100%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $color_white;
+  background-color: transparent;
+  padding: 12px 62px;
+  border: 1px solid $color_accent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   max-width: 160px;
+  align-self: center;
+  transition: background-color $transition__stock, color $transition__stock;
+  &:hover,
+  &:focus {
+    background-color: $color_accent;
+  }
+}
+label {
+  flex-wrap: 1;
+}
+input,
+textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  margin-top: 44px;
+  border-radius: 0px;
+}
+
+.booking__main-decorative-container {
+  background-color: #191c26;
+}
+.booking__input-area,
+.massage {
+  color: $color_white;
+  &:focus {
+    border-color: $color_white;
+    outline: none;
+  }
+}
+.booking__input-area:focus.booking__input-area::placeholder,
+.massage:focus.massage::placeholder {
+  border-color: $color_white;
+  outline: none;
+  color: $color_white;
+}
+.booking__input-area::placeholder,
+.massage::placeholder {
+  font-family: var(--primery-font-family);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+
+  transition: color $transition__stock;
+}
+
+.booking__decorative-container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .booking__decorative-container {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .booking__input-area {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 768px) {
+  ._centre-title {
+    align-self: self-start;
+  }
+  .booking__btn {
+    align-self: self-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking__input-area {
+    width: 250px;
+  }
+}

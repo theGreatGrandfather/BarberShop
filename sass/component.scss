@@ -1,0 +1,145 @@
+._section-title-dark {
+  color: $color_white;
+}
+
+.modal-btn {
+  display: inline-block;
+  margin-bottom: auto;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16/12 * 100%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $color_white;
+  background-color: transparent;
+  padding: 12px 20px;
+  border: 1px solid $color_accent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color $transition__stock, color $transition__stock;
+  &:hover,
+  &:focus {
+    background-color: $color_accent;
+  }
+}
+
+.modal-btn-white {
+  color: $header-text-color;
+
+  &:hover,
+  &:focus {
+    color: $color_white;
+  }
+
+  width: 163px;
+}
+.modal-btn-dark {
+  color: $color_white;
+  align-self: center;
+}
+.__descripttion-white {
+  color: $primery-text-color;
+}
+
+._suptitle-white {
+  color: $header-text-color;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: $header-text-color;
+    margin-right: 20px;
+  }
+}
+.section-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33/28 * 100%;
+  letter-spacing: 0.05em;
+}
+.section-title-second {
+  font-size: 42px;
+  line-height: 49/42 * 100%;
+  max-width: 418px;
+}
+._section-title-white {
+  color: $header-text-color;
+}
+
+._container {
+  padding: 0 23px;
+  margin-left: auto;
+  margin-right: auto;
+}
+._section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+._suptitle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15/11 * 100%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+._suptitle-dark {
+  color: rgba(157, 164, 189, 0.6);
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.6);
+    margin-right: 20px;
+  }
+}
+
+._descripttion {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.02em;
+  margin-top: 20px;
+}
+.__descripttion-dark {
+  color: $component-text-color;
+}
+@media screen and (min-width: 768px) {
+  ._container {
+    width: 768px;
+    padding: 0 39px;
+  }
+  ._section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  ._descripttion {
+    font-size: 18px;
+    line-height: 167%;
+  }
+  .modal-btn-white {
+    margin-top: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  ._container {
+    width: 1200px;
+    padding: 0 15px;
+  }
+  ._section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .section-title {
+    font-size: 42px;
+    line-height: 49/42 * 100%;
+  }
+  .modal-btn-white {
+    margin-top: auto;
+  }
+}
